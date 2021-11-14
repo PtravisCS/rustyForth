@@ -1,0 +1,17 @@
+name: rusty_p_forth
+author: Paul T. <ptravisCS@gmail.com>
+about: a simple FORTH interpreter built using Rust. Modifies the default FORTH syntax, primarily with the goal of improving String handling.
+args:
+  - file:
+      short: f
+      long: file
+      value_name: INPUT_FILE
+      required: true
+      help: The code file to interpret or run
+      takes_value: true
+  - interactive:
+      short: i
+      long: interactive
+      required: false
+      takes_value: false
+      help: Causes interpeter to start in interactive mode. If a file is provided the interpreter will parse/run the file but will then exit to the interactive prompt instead of the shell.
